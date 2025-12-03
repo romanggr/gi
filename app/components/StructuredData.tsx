@@ -2,7 +2,7 @@ import structuredDataContent from "../../.intlayer/dictionary/structured-data.js
 import faqSectionContent from "../../.intlayer/dictionary/faq-section.json";
 
 export default async function StructuredData({ locale }: { locale: string }) {
-  const baseUrl = process.env.BASE_URL!;
+  const baseUrl = process.env.BASE_URL;
   const contentStructuredData = await getTranslation(structuredDataContent, locale);
   const contentFAQ = await getTranslation(faqSectionContent, locale);
 
